@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="blobs">
   <head>
     <meta charset="utf-8">
     <title>Blobly</title>
   </head>
   <body>
-    This is text!
+    <main ng-controller="BlobCntrl">
+      <ul>
+        <li ng-repeat="tile in player1.tiles">Stuff</li>
+      </ul>
+    </main>
+    <aside>
+    </aside>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="controllers.js"></script>
   </body>
 </html>
