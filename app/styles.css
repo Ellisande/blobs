@@ -1,0 +1,51 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: red;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	background-color: yellow;
+	flex-grow: 1;
+}
+
+h3 {
+	text-align: center;
+}
+
+.flex-item {
+	flex-grow: 1;
+}
+
+.tileboard {
+	flex-direction: column;
+	background-color: blue;
+	
+}
+
+.tile {
+	min-height: 5vh;
+	border: 2px solid silver;
+}
+
+.board {
+	background-color: #777;
+	border: 3px solid black;
+	flex-grow: 3;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	min-height: 175px;
+	flex-grow: 1;
+	border: 2px solid cyan;
+}
+
+.column {
+	flex-grow: 1;
+	border: 1px solid purple;
+}
