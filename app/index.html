@@ -5,13 +5,16 @@
     <title>Blobly</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="tile/tile.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="controllers.js"></script>
+    <script src="directives.js"></script>
   </head>
   <body>
   	<main class="flex-container" ng-controller="BlobCntrl">
   		<div class="flex-item player">
   			<h3 class="flex-item">Player 1</h3>
   			<div class="flex-item tileboard">
-          <tile ng-repeat="tile in player1.tiles" />
+          		<tile ng-repeat="tile in player1.tiles" ></tile>
   			</div>
   		</div>
 		<div class="flex-item board">
@@ -35,16 +38,9 @@
 		<div class="flex-item player">
   			<h3 class="flex-item">Player 2</h3>
 			<div class="flex-item tileboard">
-  				<div class="flex-item tile">1</div>
-  				<div class="flex-item tile">2</div>
-  				<div class="flex-item tile">3</div>
-  				<div class="flex-item tile">4</div>
-  				<div class="flex-item tile">5</div>
+			    <tile ng-repeat="tile in player2.tiles" ></tile>
    			</div>
 		</div>
   	</main>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script src="controllers.js"></script>
-    <script src="directives.js"></script>
   </body>
 </html>

@@ -22,14 +22,8 @@ h3 {
 
 .tileboard {
 	flex-direction: column;
-	background-color: blue;
-
+	background-color: green;	
 }
-
-/*.tile {
-	min-height: 5vh;
-	border: 2px solid silver;
-}*/
 
 .board {
 	background-color: #777;
