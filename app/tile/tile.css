@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   background: url('light-red-blob.gif') center no-repeat;
   background-size: cover;
 }
@@ -13,11 +13,14 @@
   justify-content: space-between;
   flex-grow: 1;
 }
-.tile i {
+.tile img {
   min-width: 5px;
   min-height: 5px;
+  flex-grow: 1;
+  max-width: 20px;
+  max-height: 20px;
   background-image: url('arrow.svg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -26,7 +29,7 @@
   align-content: flex-start;
   justify-content: center;
 }
-.tile .top i {
+.tile .top img {
   transform: rotate(-90deg);
 }
 .tile .left {
@@ -34,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.tile .left i {
+.tile .left img {
   transform: rotate(180deg);
 }
 .tile .right {
@@ -47,6 +50,6 @@
   justify-content: center;
   align-content: flex-end;
 }
-.tile .bottom i {
+.tile .bottom img {
   transform: rotate(90deg);
 }
