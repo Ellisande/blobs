@@ -14,8 +14,8 @@
   flex-grow: 1;
 }
 .tile i {
-  width: 5px;
-  height: 5px;
+  min-width: 5px;
+  min-height: 5px;
   background-image: url('arrow.svg');
   background-size: contain;
   background-position: center;
