@@ -1,0 +1,18 @@
+<div class="tile">
+  <div class="left">
+    <i ng-repeat="power in getTicks(tile.left) track by $index"></i>
+  </div>
+  <div class="middle">
+    <div class="top">
+      <i ng-repeat="power in getTicks(tile.top) track by $index"></i>
+    </div>
+    <div class="bottom">
+      <i ng-repeat="power in getTicks(tile.bottom) track by $index"></i>
+    </div>
+  </div>
+
+  <div class="right">
+    <i ng-repeat="power in getTicks(tile.right) track by $index"></i>
+  </div>
+
+</div>

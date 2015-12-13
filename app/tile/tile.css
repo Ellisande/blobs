@@ -1,0 +1,52 @@
+.tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50px;
+  height: 50px;
+  background: url('light-red-blob.gif') center no-repeat;
+  background-size: cover;
+}
+.tile .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.tile i {
+  width: 5px;
+  height: 5px;
+  background-image: url('arrow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tile .top {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+}
+.tile .top i {
+  transform: rotate(-90deg);
+}
+.tile .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tile .left i {
+  transform: rotate(180deg);
+}
+.tile .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tile .bottom {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+.tile .bottom i {
+  transform: rotate(90deg);
+}
